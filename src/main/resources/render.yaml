@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: hire-backend
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: production
